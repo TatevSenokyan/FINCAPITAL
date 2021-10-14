@@ -2,13 +2,18 @@ window.addEventListener("scroll", handleScroll);
 
 
 function handleScroll() {
+  let elem=document.querySelector('.menu')
+  // elem.style.backgroundColor='red'
+  // elem.style.transition='all 0.6s ease'
+  elem.classList.toggle('scrolling-active',scrollY>0)
   if(window.pageYOffset>0) {
-    let elem=document.querySelector('.menu')
-    elem.style.backgroundColor='red'
+  
+   
 
   } else {
-    let elem=document.querySelector('.menu')
-    elem.style.backgroundColor='transparent'
+    // let elem=document.querySelector('.menu')
+    // elem.style.backgroundColor='transparent'
+   
   }
 }
 
@@ -62,7 +67,8 @@ function handleScroll() {
    
        const secDeg=date.getSeconds()/60*360-90;
        const minDeg=date.getMinutes()/60*360-90;
-       const hourDeg=date.getHours()-2/12*360-90;
+       const hourDeg=(date.getHours()-2)/12*360-90;
+
        hourparisEl.style.transform=`rotate(${hourDeg}deg)`
        minparisEl.style.transform=`rotate(${minDeg}deg)`
        secparisEl.style.transform=`rotate(${secDeg}deg)`
@@ -74,7 +80,7 @@ function handleScroll() {
 
     const secDeg=date.getSeconds()/60*360-90;
     const minDeg=date.getMinutes()/60*360-90;
-    const hourDeg=date.getHours()-8/12*360-90;
+    const hourDeg=(date.getHours()-8)/12*360-90;
     hournewyorkEl.style.transform=`rotate(${hourDeg}deg)`
     minnewyorkEl.style.transform=`rotate(${minDeg}deg)`
     secnewyorkEl.style.transform=`rotate(${secDeg}deg)`
@@ -86,7 +92,7 @@ setInterval(()=>{
 
   const secDeg=date.getSeconds()/60*360-90;
   const minDeg=date.getMinutes()/60*360-90;
-  const hourDeg=date.getHours()-19/12*360-90;
+  const hourDeg=(date.getHours()-19)/12*360-90;
   hourtokyoEl.style.transform=`rotate(${hourDeg}deg)`
   mintokyoEl.style.transform=`rotate(${minDeg}deg)`
   sectokyoEl.style.transform=`rotate(${secDeg}deg)`

@@ -25,10 +25,23 @@ header{
     position: fixed;
     width: 100%;
     display:flex;
+    z-index:2000;
     justify-content: space-between;
     
    
     
+}
+.scrolling-active {
+    background-color: olivedrab;
+    box-shadow: 0.3px 1 rem olivedrab;
+    transition:all 0.6s ease;
+    height:6rem;
+    align-items: center;
+}
+.scrolling-active a{
+   
+    transition:0.6s;
+  
 }
 .menu1 {
  margin-left: 5px
@@ -273,14 +286,10 @@ width: 492px;
     background-repeat: no-repeat;
 }
 
-.hourparis,
-.minparis,
+
+
 .secparis,
-.hournewyork,
-.minnewyork,
 .secnewyork,
-.hourtokyo,
-.mintokyo,
 .sectokyo {
     position: absolute;
     top:50%;
@@ -294,56 +303,89 @@ width: 492px;
     
 }
 
+.minparis,
+.minnewyork,
+.mintokyo {
+    position: absolute;
+    top:50%;
+    left:50%;
+    height: 1px;
+    width:37%;
+    border-radius: 50%;
+    background-color: white;
+    transform-origin: left;
+    transform: rotate(-90deg);
+    
+}
+
+.hourparis,
+.hournewyork,
+.hourtokyo {
+    position: absolute;
+    top:50%;
+    left:50%;
+    height: 1px;
+    width:27%;
+    border-radius: 50%;
+    background-color: white;
+    transform-origin: left;
+    transform: rotate(-90deg);
+}
+
 .hover1{
     position: absolute;
-    width:380px;
-    height: 300px;
+    width:389px;
+    height: 320px;
     background-color: gray;
     margin-top: 10px;
- opacity: 0;
+    opacity: 0;
+    border-radius: 6%;
    
 }
 
 
 
 .div:hover  .hover1{
-    margin-left:5px;
-    margin-top:-75%;
+   
+    margin-top:-79%;
+    margin-left: -1px;
     opacity:0.5
 }
 
 .hover2{
     position: absolute;
-    width:380px;
-    height: 300px;
+    width:389px;
+    height: 320px;
     background-color: gray;
     margin-top: 10px;
- opacity: 0;
+    opacity: 0;
+    border-radius: 6%;
    
 }
 
 
 
 .div1:hover  .hover2{
-    margin-left:5px;
-    margin-top:-75%;
+    margin-top:-79%;
+    margin-left: -1px;
     opacity:0.5
 }
 
 .hover3{
     position: absolute;
-    width:380px;
-    height: 300px;
+    width:389px;
+    height: 320px;
     background-color: gray;
     margin-top: 10px;
- opacity: 0;
+     opacity: 0;
+     border-radius: 6%;
    
 }
 
 
 
 .div2:hover  .hover3{
-    margin-left:5px;
-    margin-top:-75%;
+    margin-top:-79%;
+    margin-left: -1px;
     opacity:0.5
 }
