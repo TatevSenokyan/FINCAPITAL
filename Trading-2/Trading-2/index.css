@@ -131,9 +131,15 @@ display: block;
     color:black;
 
 }
-.main_content_img1 div, .main_content_img2 img{
+.main_content_img1 div, .main_content_img2 div{
     margin-right: 12px;
 }
+
+.main_content_img2 {
+    display:flex
+}
+
+
 .products_title{
     display:flex;
     justify-content: space-around;

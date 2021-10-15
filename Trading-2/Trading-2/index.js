@@ -1,3 +1,33 @@
+
+function getCurrency () {
+  
+fetch('https://api.exchangerate.host/latest').
+then(function(res){
+  return res.json()
+}).then(function(res) {
+ let eur=document.querySelector('.euroCurrency')
+ let usd=document.querySelector('.usdCurrency')
+ let ien=document.querySelector('.ienCurrency')
+ let AMD=res.rates.AMD
+ let USD=res.rates.USD
+ let JPY=res.rates.JPY
+
+ eur.textContent=`${'1EUR='+AMD.toFixed(2)+'AMD'}`
+ usd.textContent=`${'1USD='+(AMD/USD).toFixed(2)+'AMD'}`
+ ien.textContent=`${'1JPY='+(AMD/JPY).toFixed(2)+'AMD'}`
+})
+}
+getCurrency ()
+
+// get currency from api every 12 hours
+setInterval(()=>{
+  getCurrency ()
+},43200000)
+
+
+
+
+
 window.addEventListener("scroll", handleScroll);
 
 
