@@ -3,10 +3,24 @@ body{
     padding:0;
     width:1366px;
     height:100vh;
+    font-family: Roboto;
     /* height:200px; */
     background-image:linear-gradient(to bottom right,#05234B,#20233B);
     color:white;
     
+}
+
+.scrolling-active {
+    background-color: olivedrab;
+    box-shadow: 0.3px 1 rem olivedrab;
+    transition:all 0.6s ease;
+    height:6rem;
+    align-items: center;
+}
+.scrolling-active a{
+   
+    transition:0.6s;
+  
 }
 a{
     text-decoration: none;

@@ -10,7 +10,25 @@
               const activeEl=document.querySelector('.active')
               const nonActiveEl=document.querySelector('.langContent>a')
 
+ 
+              window.addEventListener("scroll", handleScroll);
 
+
+function handleScroll() {
+  let elem=document.querySelector('.menu')
+  // elem.style.backgroundColor='red'
+  // elem.style.transition='all 0.6s ease'
+  elem.classList.toggle('scrolling-active',scrollY>0)
+  if(window.pageYOffset>0) {
+  
+   
+
+  } else {
+    // let elem=document.querySelector('.menu')
+    // elem.style.backgroundColor='transparent'
+   
+  }
+}
                  let data={
                    english: {
                      about:'About us',
