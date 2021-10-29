@@ -28,14 +28,17 @@ header{
     width: 100%;
     display:flex;
     z-index:2000;
+    align-items: center;
+    height:6rem;
     justify-content: space-between;
     
    
     
 }
+
 .scrolling-active {
-    background-color: olivedrab;
-    box-shadow: 0.3px 1 rem olivedrab;
+    background-color: #5897cb75;
+    box-shadow: 0.3px 1 rem  #5897cb75;
     transition:all 0.6s ease;
     height:6rem;
     align-items: center;
@@ -56,6 +59,12 @@ header{
    
 
 }
+.icon {
+    display:none
+}
+.innerMenu {
+    display:flex
+}
 .secmenu li{
     list-style: none;
     margin-right: 24px;
@@ -74,7 +83,7 @@ header{
     margin-top: 8px;
 }
 .logo_part{
- width: 707px;
+ width: 100%;
  height:242px;
  margin:0 auto;
  position:relative; 
@@ -82,11 +91,14 @@ header{
 }
 .logo_part h1{
     color:white;
+    margin:auto;
     font-size: 40px;
     width:770px;
     height:47px;
 }
 .logo_part img{
+width:300px;
+height:300px;
 margin:0 auto;
 display: block;
 }
@@ -115,7 +127,7 @@ display: block;
 .main_currency1{
     display:flex;
     justify-content: space-around;
-    background: #98E39E;
+    background: #71afe1;
     width:414px;
     height:33px;
     border-radius: 6px;
@@ -200,7 +212,7 @@ footer{
     align-items: center;
     height:127px;
     margin:0 auto;
-    max-width: 1200px;
+    max-width: 100%;
 }
 a{
     text-decoration: none;
@@ -220,7 +232,7 @@ width: 492px;
     }
     .contact_icon svg{
         position:relative;
-        top:7px;
+        
         left:-10px;
     }
 
@@ -233,12 +245,14 @@ width: 492px;
       .dropdownLang {
         position: relative;
         display: inline-block;
+        
       }
       
       .dropdown-content   {
+        
         display: none;
         position: absolute;
-        background-color: #f9f9f9;
+        background-color: #2c3e50;
         min-width: 160px;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
@@ -255,7 +269,7 @@ width: 492px;
       
       
       .dropdown-content a {
-        color: black;
+        color: white;
         padding: 12px 16px;
         text-decoration: none;
         display: block;
@@ -268,7 +282,7 @@ width: 492px;
         display: block;
       }
       
-      .dropdown-content a:hover {background-color: #f1f1f1}
+      .dropdown-content a:hover {background-color: #0082e6}
       .langContent li:hover {background-color: #f1f1f1}
       
       .dropdown:hover .dropdown-content {
@@ -389,6 +403,10 @@ width: 492px;
      border-radius: 6%;
    
 }
+.closeIcon {
+    display:none;
+    cursor:pointer
+}
 
 
 
@@ -396,4 +414,71 @@ width: 492px;
     margin-top:-79%;
     margin-left: -1px;
     opacity:0.5
+}
+
+
+@media screen and (max-width:900px) {
+  
+    .images1{
+        display:block;
+        margin-top: 23px;
+      
+
+        
+    }
+
+    .trainers img{
+       width:150px;
+       justify-content: space-around;
+    }
+    .card {
+        margin:0 auto
+    }
+    .images{
+       display:flex;
+       justify-content: center;
+    }
+    .footerTitle {
+        display:none
+    }
+    .contact_icon{
+        display: flex;
+        flex-direction: column;
+       
+      
+        }
+        .contact_icon p{
+           margin-top: -10px;
+            }
+        .footer_title{
+            display: flex;
+       
+            }
+     .contact_icon {
+         width:300px
+     }
+
+
+    .icon{
+       display:block;
+       margin-right: 6vw;
+       cursor:pointer
+    }
+    .innerMenu {
+        display:none
+    }
+    .logo_part h1{
+        display: none;
+    }
+  
+           
+   
+ 
+
+}
+
+@media screen and (min-width:501px) and (max-width:900px) {
+    .contact_icon {
+        width:200px
+    }
 }
