@@ -1,5 +1,6 @@
 
               const aboutEl=document.querySelector('.about')
+              const svg=document.querySelector('.contact_icon')
               const productEl=document.querySelector('.product')
               const titleEl=document.querySelector('.title')
               const textEl=document.querySelector('.text')
@@ -11,6 +12,98 @@
               const nonActiveEl=document.querySelector('.langContent>a')
 
               window.addEventListener("scroll", handleScroll);
+
+             
+const openMenu=document.querySelector('.icon')
+const mainMenu=document.querySelector('.menu')
+const innerMenu=document.querySelector('.innerMenu')
+const closeMenu=document.querySelector('.closeIcon')
+const secMenu=document.querySelector('.secmenu')
+const langWrap=document.querySelector('.langWrap')
+const arrow=document.querySelector('.arrow')
+const arrow1=document.querySelector('.arrow1')
+const dropContent=document.querySelector('.dropdown-content')
+
+openMenu.addEventListener('click',show)
+closeMenu.addEventListener('click',close)
+window.addEventListener('resize',resizee)
+
+
+function resizee ()  {
+ 
+ if ( window.innerWidth>900) {
+  openMenu.style.display='none'
+  mainMenu.style.display='flex'
+  innerMenu.style.display='flex'
+  innerMenu.style.position=''
+  innerMenu.style.marginLeft=''
+  innerMenu.style.marginTop=''
+  langWrap.style.display=''
+  mainMenu.style.height=''
+  arrow.style.display=''
+  arrow1.style.display=''
+  
+ } else {
+  openMenu.style.display='block'
+  innerMenu.style.display='none'
+  mainMenu.style.backgroundColor=''
+  closeMenu.style.display='none'
+  
+ }
+}
+
+function show () {
+
+ openMenu.style.display='none'
+ closeMenu.style.display='block'
+ closeMenu.style.marginRight='6vw';
+ mainMenu.style.height='100vh'
+ mainMenu.style.width='100%';
+ innerMenu.style.display='block'
+ mainMenu.style.alignItems='flex-start'
+ mainMenu.style.backgroundColor='#2c3e50'
+ innerMenu.style.position='absolute'
+ innerMenu.style.marginLeft='-50vw'
+ innerMenu.style.marginTop='30vw'
+ mainMenu.style.transition='all 1s ease';
+ aboutEl.style.paddingTop='100px'
+ langWrap.style.display='none'
+ arrow.style.display='none'
+ arrow1.style.display='none'
+ dropContent.style.marginLeft='50px'
+ 
+
+
+ 
+ 
+
+
+
+}
+
+
+function close () {
+ 
+  openMenu.style.display='block'
+  closeMenu.style.display='none'
+  mainMenu.style.height='6rem'
+  mainMenu.style.width='100%';
+  mainMenu.style.alignItems='center'
+  innerMenu.style.display='none'
+  mainMenu.style.backgroundColor=''
+  mainMenu.style.display='flex'
+
+ 
+ 
+}
+
+
+
+
+
+
+
+
 
 
               function handleScroll() {
