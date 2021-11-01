@@ -42,8 +42,18 @@ header{
     justify-content: space-between;
 }
 .secmenu{
-    display: flex;
 
+    display: flex;
+    margin-right:0px
+   
+   
+
+}
+.icon {
+    display:none
+}
+.innerMenu {
+    display:flex
 }
 .secmenu li{
     list-style: none;

@@ -42,8 +42,18 @@ header{
     justify-content: space-between;
 }
 .secmenu{
-    display: flex;
 
+    display: flex;
+    margin-right:0px
+   
+   
+
+}
+.icon {
+    display:none
+}
+.innerMenu {
+    display:flex
 }
 .secmenu li{
     list-style: none;
@@ -139,6 +149,15 @@ width: 100%;
     width:480px;
     margin-left:150px;
     margin-top:100px
+}
+.closeIcon {
+    display:none;
+    cursor:pointer
+}
+
+.icon {
+    display:none;
+    cursor:pointer
 }
 
 
@@ -302,8 +321,4 @@ width: 100%;
    
  
 
-}
-.closeIcon {
-    display:none;
-    cursor:pointer
 }
