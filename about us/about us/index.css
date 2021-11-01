@@ -107,8 +107,7 @@ padding-top: 50px;
 footer{
   
    margin-top:100px;
-    align-items: flex-end;
-    width:100%;
+   
     min-height:127px;
     margin-bottom:0;
     background-color: #293747;
@@ -129,12 +128,11 @@ a{
 }
 .contact_icon{
 display: flex;
-justify-content: space-between;
-width: 100%;
+/* justify-content: space-between; */
+
 }
 .footer_title{
     display: flex;
-    justify-content: space-between;
     width:422px;
     height: 127px;
     align-items: center;
@@ -225,6 +223,9 @@ width: 100%;
           display:flex;
           flex-direction:column
       }
+      .menu1 {
+          opacity:0
+      }
       .training {
           width:100%;
         justify-content: center;
@@ -250,6 +251,7 @@ width: 100%;
     .footer_item {
         display:flex;
         flex-direction: column;
+        justify-content: space-between;
     }
 
     .contact_icon {

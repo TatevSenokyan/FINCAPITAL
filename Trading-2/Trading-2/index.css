@@ -225,7 +225,7 @@ width: 492px;
 }
 .footer_title{
     display: flex;
-    justify-content: space-between;
+  
     width:422px;
     height: 127px;
     align-items: center;
@@ -247,7 +247,7 @@ width: 492px;
         display: inline-block;
         
       }
-      
+    
       .dropdown-content   {
         
         display: none;
@@ -360,8 +360,10 @@ width: 492px;
     height: 320px;
     background-color: gray;
     margin-top: 10px;
-    opacity: 0;
+    
     border-radius: 6%;
+    margin-top:-79%;
+    opacity:0
    
 }
 
@@ -369,7 +371,7 @@ width: 492px;
 
 .div:hover  .hover1{
    
-    margin-top:-79%;
+   
     margin-left: -1px;
     opacity:0.5
 }
@@ -381,6 +383,7 @@ width: 492px;
     background-color: gray;
     margin-top: 10px;
     opacity: 0;
+    margin-top:-79%;
     border-radius: 6%;
    
 }
@@ -388,7 +391,7 @@ width: 492px;
 
 
 .div1:hover  .hover2{
-    margin-top:-79%;
+ 
     margin-left: -1px;
     opacity:0.5
 }
@@ -401,6 +404,7 @@ width: 492px;
     margin-top: 10px;
      opacity: 0;
      border-radius: 6%;
+     margin-top:-79%;
    
 }
 .closeIcon {
@@ -411,7 +415,7 @@ width: 492px;
 
 
 .div2:hover  .hover3{
-    margin-top:-79%;
+  
     margin-left: -1px;
     opacity:0.5
 }
@@ -425,6 +429,9 @@ width: 492px;
       
 
         
+    }
+    .menu1 {
+        opacity: 0;
     }
 
     .trainers img{
@@ -441,6 +448,8 @@ width: 492px;
     .footerTitle {
         display:none
     }
+
+  
     .contact_icon{
         display: flex;
         flex-direction: column;

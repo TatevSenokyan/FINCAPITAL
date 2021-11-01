@@ -148,10 +148,10 @@ function close () {
                  }
            
              let attr=localStorage.getItem("lang");
-             attr=='english'?activeEl.textContent='EN':activeEl.textContent='ARM'
-             attr=='english'?nonActiveEl.textContent='ARM':nonActiveEl.textContent='EN'
-             attr=='armenian'?activeEl.textContent='ARM':activeEl.textContent='EN'
-             attr=='armenian'?nonActiveEl.textContent='EN':nonActiveEl.textContent='ARM'
+             attr=='english'?activeEl.textContent='EN':activeEl.textContent='Հայ'
+             attr=='english'?nonActiveEl.textContent='Հայ':nonActiveEl.textContent='EN'
+             attr=='armenian'?activeEl.textContent='Հայ':activeEl.textContent='EN'
+             attr=='armenian'?nonActiveEl.textContent='EN':nonActiveEl.textContent='Հայ'
              attr=='english'?nonActiveEl.setAttribute('language','armenian'):nonActiveEl.setAttribute('language','english')
              aboutEl.textContent=data[attr].about
              productEl.textContent=data[attr].product
@@ -164,8 +164,8 @@ function close () {
         
              nonActiveEl.addEventListener('click',()=>{
               let attr=nonActiveEl.getAttribute('language')
-              activeEl.textContent=='EN'?activeEl.textContent='ARM':activeEl.textContent='EN'
-              nonActiveEl.textContent=='ARM'?nonActiveEl.textContent='EN':nonActiveEl.textContent='ARM'
+              activeEl.textContent=='EN'?activeEl.textContent='Հայ':activeEl.textContent='EN'
+              nonActiveEl.textContent=='Հայ'?nonActiveEl.textContent='EN':nonActiveEl.textContent='Հայ'
               attr=='english'?nonActiveEl.setAttribute('language','armenian'):nonActiveEl.setAttribute('language','english')
               localStorage.setItem("lang", attr)
               aboutEl.textContent=data[attr].about

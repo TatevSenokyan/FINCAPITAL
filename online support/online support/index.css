@@ -129,7 +129,7 @@ a{
 .contact_icon{
 display: flex;
 justify-content: space-between;
-width: 100%;
+
 }
 .footer_title{
     display: flex;
@@ -258,10 +258,7 @@ width: 100%;
   
     .images1{
         display:block;
-        margin-top: 23px;
-      
-
-        
+        margin-top: 23px;  
     }
 
     .trainers img{

@@ -88,30 +88,30 @@ function close () {
 
 
 
-function getCurrency () {
+// function getCurrency () {
   
-fetch('https://api.exchangerate.host/latest').
-then(function(res){
-  return res.json()
-}).then(function(res) {
- let eur=document.querySelector('.euroCurrency')
- let usd=document.querySelector('.usdCurrency')
- let ien=document.querySelector('.ienCurrency')
- let AMD=res.rates.AMD
- let USD=res.rates.USD
- let JPY=res.rates.JPY
+// fetch('https://api.exchangerate.host/latest').
+// then(function(res){
+//   return res.json()
+// }).then(function(res) {
+//  let eur=document.querySelector('.euroCurrency')
+//  let usd=document.querySelector('.usdCurrency')
+//  let ien=document.querySelector('.ienCurrency')
+//  let AMD=res.rates.AMD
+//  let USD=res.rates.USD
+//  let JPY=res.rates.JPY
 
- eur.textContent=`${'1EUR='+AMD.toFixed(2)+'AMD'}`
- usd.textContent=`${'1USD='+(AMD/USD).toFixed(2)+'AMD'}`
- ien.textContent=`${'1JPY='+(AMD/JPY).toFixed(2)+'AMD'}`
-})
-}
-getCurrency ()
+//  eur.textContent=`${'1EUR='+AMD.toFixed(2)+'AMD'}`
+//  usd.textContent=`${'1USD='+(AMD/USD).toFixed(2)+'AMD'}`
+//  ien.textContent=`${'1JPY='+(AMD/JPY).toFixed(2)+'AMD'}`
+// })
+// }
+// getCurrency ()
 
-// get currency from api every 12 hours
-setInterval(()=>{
-  getCurrency ()
-},43200000)
+// // get currency from api every 12 hours
+// setInterval(()=>{
+//   getCurrency ()
+// },43200000)
 
 
 
@@ -287,17 +287,13 @@ localStorage.setItem("lang", "english")
 
   nonActiveEl.addEventListener('click',()=>{
     let attr=nonActiveEl.getAttribute('language')
-    activeEl.textContent=='EN'?activeEl.textContent='ARM':activeEl.textContent='EN'
-    nonActiveEl.textContent=='ARM'?nonActiveEl.textContent='EN':nonActiveEl.textContent='ARM'
+    activeEl.textContent=='EN'?activeEl.textContent='Հայ':activeEl.textContent='EN'
+    nonActiveEl.textContent=='Հայ'?nonActiveEl.textContent='EN':nonActiveEl.textContent='Հայ'
     attr=='english'?nonActiveEl.setAttribute('language','armenian'):nonActiveEl.setAttribute('language','english')
     localStorage.setItem("lang", attr)
     aboutEl.textContent=data[attr].about
     productEl.textContent=data[attr].product
     timeEl.textContent=data[attr].time
-    currencyEl.textContent=data[attr].currency
-    usdEl.textContent=data[attr].usd
-    eurEl.textContent=data[attr].eur
-    ienEl.textContent=data[attr].ien
     parisEl.textContent=data[attr].paris
     newyorkEl.textContent=data[attr].newyork
     tokyoEl.textContent=data[attr].tokyo
