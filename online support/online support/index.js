@@ -116,7 +116,7 @@
                      product:'Products',
                      title: 'Online support',
                      text:' With our courses, you have the ability to receive online support anytime և from anywhere. Our professional team will help you solve the problem very quickly and as efficiently as possible.',
-                     armenia:'Armenia, Yerevan',
+                     armenia:'Armenia, Yerevan, Simon Vratsyan str, 73/1',
                      linktraining:'Training',
                      linkinvestment:'Investments',
                      linkSupport:'Online Support',
@@ -127,7 +127,7 @@
                      product:'Ծառայություններ',
                      title:'Օնլայն աջակցություն',
                      text:"Օգտվելով մեր դասընթացներից հնարավորություն ունեք ստանալու օնլայն աջակցություն՝ ցանկացած պահի և ցանկացած վայրից։ Մեր պրոֆեսիոնալ թիմը կօգնի Ձեզ շատ արագ լուծել առաջացած խնդիրը՝ արդյունավետ տարբերակով։",
-                     armenia:'Հայաստան, Երևան',
+                     armenia:'Հայաստան, Երևան, Սիմոն Վրացյան փող․, 73/1',
                      linktraining:'Դասընթաց',
                      linkinvestment:'Ներդրումներ',
                      linkSupport:'Օնլայն աջակցություն',
@@ -135,10 +135,10 @@
                    }
                  }
              let attr=localStorage.getItem("lang");
-             attr=='english'?activeEl.textContent='EN':activeEl.textContent='Հայ'
-             attr=='english'?nonActiveEl.textContent='Հայ':nonActiveEl.textContent='EN'
-             attr=='armenian'?activeEl.textContent='Հայ':activeEl.textContent='EN'
-             attr=='armenian'?nonActiveEl.textContent='EN':nonActiveEl.textContent='Հայ'
+             attr=='english'?activeEl.textContent='EN':activeEl.textContent='ՀԱՅ'
+             attr=='english'?nonActiveEl.textContent='ՀԱՅ':nonActiveEl.textContent='EN'
+             attr=='armenian'?activeEl.textContent='ՀԱՅ':activeEl.textContent='EN'
+             attr=='armenian'?nonActiveEl.textContent='EN':nonActiveEl.textContent='ՀԱՅ'
              attr=='english'?nonActiveEl.setAttribute('language','armenian'):nonActiveEl.setAttribute('language','english')
              aboutEl.textContent=data[attr].about
              productEl.textContent=data[attr].product
@@ -151,8 +151,8 @@
         
              nonActiveEl.addEventListener('click',()=>{
                let attr=nonActiveEl.getAttribute('language')
-               activeEl.textContent=='EN'?activeEl.textContent='Հայ':activeEl.textContent='EN'
-               nonActiveEl.textContent=='Հայ'?nonActiveEl.textContent='EN':nonActiveEl.textContent='Հայ'
+               activeEl.textContent=='EN'?activeEl.textContent='ՀԱՅ':activeEl.textContent='EN'
+               nonActiveEl.textContent=='ՀԱՅ'?nonActiveEl.textContent='EN':nonActiveEl.textContent='ՀԱՅ'
                attr=='english'?nonActiveEl.setAttribute('language','armenian'):nonActiveEl.setAttribute('language','english')
                localStorage.setItem("lang", attr)
                aboutEl.textContent=data[attr].about

@@ -128,7 +128,7 @@ function close () {
                      product:'Products',
                      title: 'Training',
                      text:'Course duration - x class / daily - x-y hours / Course type - online / As a result of the course, you will know what the market is, how it works, how to make money on this movement. You will be able to independently manage your account and From time to time you will have the opportunity to receive an online consultation',
-                     armenia:'Armenia, Yerevan',
+                     armenia:'Armenia, Yerevan, Simon Vratsyan str,73/1',
                      linktraining:'Training',
                      linkinvestment:'Investments',
                      linkSupport:'Online Support',
@@ -139,7 +139,7 @@ function close () {
                      product:'Ծառայություններ',
                      title:'Դասընթաց',
                      text:"Դասընթացի տևողությունը - x դաս/Օրական-x-y ժամ/Դասընթացի տեսակ-Օնլայն/Դասընթացի արդյունքում Դուք կիմանաք , թե ինչ է շուկան, ինչպես է այն աշխատում և ինչպես այդ շարժից ստանալ եկամուտ։ Կկարողանաք ինքնուրույն Ձեր հաշիվը և պարբերաբար հնարավորություն կունենաք ստանալ օնլայն խորհրդատվություն։",
-                     armenia:'Հայաստան, Երևան',
+                     armenia:'Հայաստան, Երևան, Սիմոն Վրացյան փող․,73/1',
                      linktraining:'Դասընթաց',
                      linkinvestment:'Ներդրումներ',
                      linkSupport:'Օնլայն աջակցություն',
@@ -148,10 +148,10 @@ function close () {
                  }
            
              let attr=localStorage.getItem("lang");
-             attr=='english'?activeEl.textContent='EN':activeEl.textContent='Հայ'
-             attr=='english'?nonActiveEl.textContent='Հայ':nonActiveEl.textContent='EN'
-             attr=='armenian'?activeEl.textContent='Հայ':activeEl.textContent='EN'
-             attr=='armenian'?nonActiveEl.textContent='EN':nonActiveEl.textContent='Հայ'
+             attr=='english'?activeEl.textContent='EN':activeEl.textContent='ՀԱՅ'
+             attr=='english'?nonActiveEl.textContent='ՀԱՅ':nonActiveEl.textContent='EN'
+             attr=='armenian'?activeEl.textContent='ՀԱՅ':activeEl.textContent='EN'
+             attr=='armenian'?nonActiveEl.textContent='EN':nonActiveEl.textContent='ՀԱՅ'
              attr=='english'?nonActiveEl.setAttribute('language','armenian'):nonActiveEl.setAttribute('language','english')
              aboutEl.textContent=data[attr].about
              productEl.textContent=data[attr].product
@@ -164,8 +164,8 @@ function close () {
         
              nonActiveEl.addEventListener('click',()=>{
               let attr=nonActiveEl.getAttribute('language')
-              activeEl.textContent=='EN'?activeEl.textContent='Հայ':activeEl.textContent='EN'
-              nonActiveEl.textContent=='Հայ'?nonActiveEl.textContent='EN':nonActiveEl.textContent='Հայ'
+              activeEl.textContent=='EN'?activeEl.textContent='ՀԱՅ':activeEl.textContent='EN'
+              nonActiveEl.textContent=='ՀԱՅ'?nonActiveEl.textContent='EN':nonActiveEl.textContent='ՀԱՅ'
               attr=='english'?nonActiveEl.setAttribute('language','armenian'):nonActiveEl.setAttribute('language','english')
               localStorage.setItem("lang", attr)
               aboutEl.textContent=data[attr].about

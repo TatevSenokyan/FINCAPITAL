@@ -119,7 +119,7 @@ function handleScroll() {
                      linkinvestment:'Investments',
                      linkSupport:'Online Support',
                      text:'Founded in Armenia 07/01/2021. k: We conduct scalping (trading) courses / We provide investment services. We cooperate with a number of foreign organizations.',
-                     armenia:'Armenia, Yerevan'
+                     armenia:'Armenia, Yerevan, Simon Vratsyan str., 73/1'
 
                    },
                    armenian :{
@@ -130,16 +130,16 @@ function handleScroll() {
                      linkSupport:'Օնլայն աջակցություն',
                      title:'Ներդրումներ',
                      text:"Ներդրումային ծառայությունները նրանց համար են, ովքեր ունեն ֆինանս և ցանկանում են դրա միջոցով գումար վաստակել ուղղակի չգիտեն թե ինչպես կարելի է դա անել առանց ավելորդ ռիսկերի և պրոֆեսիոնալ ձևով։ Մեր մասսագետները Ձեզ կօգնեն գրագետ ձևով ներդրումներ կատարել և խուսափել ավելորդ ռիսկերից։ Արդյունքում ունենակ դիվերսիֆիկացված ներդրում և կստանաք բավականություն ամբողջ պրոցեսից։",
-                     armenia:'Հայաստան, Երևան'
+                     armenia:'Հայաստան, Երևան, Սիմոն Վրացյան փող․, 73/1'
 
                    }
                  }
            
            let attr=localStorage.getItem("lang");
-           attr=='english'?activeEl.textContent='EN':activeEl.textContent='Հայ'
-           attr=='english'?nonActiveEl.textContent='Հայ':nonActiveEl.textContent='EN'
-           attr=='armenian'?activeEl.textContent='Հայ':activeEl.textContent='EN'
-           attr=='armenian'?nonActiveEl.textContent='EN':nonActiveEl.textContent='Հայ'
+           attr=='english'?activeEl.textContent='EN':activeEl.textContent='ՀԱՅ'
+           attr=='english'?nonActiveEl.textContent='ՀԱՅ':nonActiveEl.textContent='EN'
+           attr=='armenian'?activeEl.textContent='ՀԱՅ':activeEl.textContent='EN'
+           attr=='armenian'?nonActiveEl.textContent='EN':nonActiveEl.textContent='ՀԱՅ'
            attr=='english'?nonActiveEl.setAttribute('language','armenian'):nonActiveEl.setAttribute('language','english')
            aboutEl.textContent=data[attr].about
            productEl.textContent=data[attr].product
@@ -152,8 +152,8 @@ function handleScroll() {
           
              nonActiveEl.addEventListener('click',()=>{
               let attr=nonActiveEl.getAttribute('language')
-              activeEl.textContent=='EN'?activeEl.textContent='Հայ':activeEl.textContent='EN'
-              nonActiveEl.textContent=='Հայ'?nonActiveEl.textContent='EN':nonActiveEl.textContent='Հայ'
+              activeEl.textContent=='EN'?activeEl.textContent='ՀԱՅ':activeEl.textContent='EN'
+              nonActiveEl.textContent=='ՀԱՅ'?nonActiveEl.textContent='EN':nonActiveEl.textContent='ՀԱՅ'
               attr=='english'?nonActiveEl.setAttribute('language','armenian'):nonActiveEl.setAttribute('language','english')
               localStorage.setItem("lang", attr)
               aboutEl.textContent=data[attr].about

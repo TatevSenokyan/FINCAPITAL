@@ -2,7 +2,7 @@ body{
     margin:0;
     padding:0;
     width:100%;
-    font-family: Roboto;
+    font-family: FreeSans;
     background-image:linear-gradient(to bottom right,#05234B,#20233B);
     color:white;
     
@@ -94,7 +94,7 @@ display: block;
 }
 .main_content{
     font-family: Roboto;
-    max-width: 1026px;
+    max-width:100%;
     margin:0 auto;
 }
 .training {
@@ -102,25 +102,24 @@ display: block;
     margin-left:30px;
     font-size:20px;
     text-align: center;
+   
 }
 footer{
-  
-   margin-top:100px;
-    align-items: flex-end;
+    display:flex;
+    margin-top:100px;
+   justify-content: space-between;
     width:100%;
     min-height:127px;
     margin-bottom:0;
+  
     background-color: #293747;
     
 }
 .footer_item{
-    display:flex;
+ 
     justify-content: space-between;
     align-items: center;
-    
-   
 
-    max-width: 100%;
 }
 a{
     text-decoration: none;
@@ -128,12 +127,11 @@ a{
 }
 .contact_icon{
 display: flex;
-justify-content: space-between;
+
 
 }
 .footer_title{
     display: flex;
-    width:422px;
     height: 127px;
     align-items: center;
     }
@@ -214,9 +212,7 @@ justify-content: space-between;
           display:flex;
           flex-direction:column
       }
-      .menu1 {
-          opacity:0
-      }
+     
       .training {
           width:100%;
         justify-content: center;
@@ -225,7 +221,7 @@ justify-content: space-between;
         text-align:center;
         margin-left: 0px;
         font-size: 18px;
-        margin-top: 100px;
+     
       }
      
       .innerDiv {
@@ -239,16 +235,16 @@ justify-content: space-between;
       
         margin-top:100px
     }
-    .footer_item {
+    /* .footer_item {
         display:flex;
         flex-direction: column;
-    }
+    } */
 
-    .contact_icon {
+    /* .contact_icon {
         font-size: 13px;
         display: flex;
         justify-content: space-around;
-    }
+    } */
     .contact_icon svg{
        left:0
     }
@@ -265,6 +261,9 @@ justify-content: space-between;
 
         
     }
+    .footer_item {
+        width:90%
+    }
 
     .trainers img{
        width:150px;
@@ -272,6 +271,14 @@ justify-content: space-between;
     }
     .card {
         margin:0 auto
+    }
+    footer {
+        display:flex;
+        flex-direction: column;
+       
+    }
+    .footer_item {
+        margin:auto
     }
     .images{
        display:flex;
@@ -282,9 +289,8 @@ justify-content: space-between;
     }
     .contact_icon{
         display: flex;
-        
-       
-      
+        margin:auto
+     
         }
         .contact_icon p{
            margin-top: -10px;

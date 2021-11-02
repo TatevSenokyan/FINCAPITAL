@@ -2,7 +2,7 @@ body{
     margin:0;
     padding:0;
     width:100%;
-    font-family: Roboto;
+    font-family: FreeSans;
     background-image:linear-gradient(to bottom right,#05234B,#20233B);
     color:white;
     
@@ -223,7 +223,7 @@ justify-content: space-between;
         text-align:center;
         margin-left: 0px;
         font-size: 18px;
-        margin-top: 100px;
+       
       }
      
       .innerDiv {

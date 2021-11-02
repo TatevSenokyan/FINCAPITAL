@@ -125,13 +125,13 @@ function handleScroll() {
   // elem.style.backgroundColor='red'
   // elem.style.transition='all 0.6s ease'
   elem.classList.toggle('scrolling-active',scrollY>0)
-  if(window.pageYOffset>0) {
-  
-   
+  if(window.pageYOffset>690) {
+       let elem=document.querySelector('.menu1>img')
+      elem.style.opacity=1
 
   } else {
-    // let elem=document.querySelector('.menu')
-    // elem.style.backgroundColor='transparent'
+    let elem=document.querySelector('.menu1>img')
+    elem.style.opacity=0
    
   }
 }
@@ -249,7 +249,7 @@ localStorage.setItem("lang", "english")
           Vahagn:'Vahagn Karapetyan',
           Karen:"Karen Aghababyan",
           Zhan:'Zhan Mozone',
-          armenia:'Armenia, Yeravan'
+          armenia:'Armenia, Yeravan,Simon Vratsyan str. 73/1'
 
           
 
@@ -279,7 +279,7 @@ localStorage.setItem("lang", "english")
           Vahagn:'Վահագն Կարապետյան',
           Karen:"Կարեն Աղաբաբյան",
           Zhan:'Ժան Մոզոնե',
-          armenia:"Հայաստան,Երևան"
+          armenia:"Հայաստան,Երևան, Սիմոն Վրացյան փող․,73/1"
         }
       }
 
@@ -287,8 +287,8 @@ localStorage.setItem("lang", "english")
 
   nonActiveEl.addEventListener('click',()=>{
     let attr=nonActiveEl.getAttribute('language')
-    activeEl.textContent=='EN'?activeEl.textContent='Հայ':activeEl.textContent='EN'
-    nonActiveEl.textContent=='Հայ'?nonActiveEl.textContent='EN':nonActiveEl.textContent='Հայ'
+    activeEl.textContent=='EN'?activeEl.textContent='ՀԱՅ':activeEl.textContent='EN'
+    nonActiveEl.textContent=='ՀԱՅ'?nonActiveEl.textContent='EN':nonActiveEl.textContent='ՀԱՅ'
     attr=='english'?nonActiveEl.setAttribute('language','armenian'):nonActiveEl.setAttribute('language','english')
     localStorage.setItem("lang", attr)
     aboutEl.textContent=data[attr].about
