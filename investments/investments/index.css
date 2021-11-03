@@ -99,10 +99,13 @@ display: block;
 }
 .training {
     display:flex;
-    margin-left:30px;
     font-size:20px;
     text-align: center;
+    padding-left: 100px;
    
+}
+.training img {
+    width:400px
 }
 footer{
     display:flex;
@@ -116,10 +119,11 @@ footer{
     
 }
 .footer_item{
- 
-    justify-content: space-between;
-    align-items: center;
 
+ 
+    justify-content:center;
+    max-width: 100%;
+    margin-left:50px;
 }
 a{
     text-decoration: none;
@@ -127,9 +131,18 @@ a{
 }
 .contact_icon{
 display: flex;
+margin-right: 50px;
 
 
 }
+
+.contact_icon p{
+    height:50px;
+   align-items:center;
+    display:flex;
+    margin-left: 20px;
+    
+    }
 .footer_title{
     display: flex;
     height: 127px;
@@ -220,9 +233,15 @@ display: flex;
         flex-direction:column;
         text-align:center;
         margin-left: 0px;
+        padding-left: 0;
         font-size: 18px;
      
       }
+
+      .training img {
+          margin:auto
+      }
+     
      
       .innerDiv {
 
@@ -250,6 +269,9 @@ display: flex;
     }
 
   }
+  footer {
+      width:100%
+  }
 
 
   @media screen and (max-width:900px) {
@@ -262,7 +284,9 @@ display: flex;
         
     }
     .footer_item {
-        width:90%
+        display:flex;
+        justify-content: center;
+        width:100%
     }
 
     .trainers img{
@@ -273,6 +297,7 @@ display: flex;
         margin:0 auto
     }
     footer {
+        width:100%;
         display:flex;
         flex-direction: column;
        
@@ -284,9 +309,7 @@ display: flex;
        display:flex;
        justify-content: center;
     }
-    .footerTitle {
-        display:none
-    }
+    
     .contact_icon{
         display: flex;
         margin:auto
@@ -296,7 +319,8 @@ display: flex;
            margin-top: -10px;
             }
         .footer_title{
-            display: flex;
+          
+            margin:auto
        
             }
     

@@ -103,7 +103,12 @@ display: block;
     margin-left:30px;
     font-size:20px;
     text-align: center;
+    margin-left:100px
    
+}
+
+.training img {
+    width:400px
 }
 footer{
   
@@ -133,6 +138,17 @@ display: flex;
 justify-content: space-between;
 
 }
+
+.contact_icon p{
+    height:50px;
+   align-items:center;
+    display:flex;
+    margin-left: 20px;
+    
+    }
+    .contact_icon a{
+        align-self: center;
+    }
 .footer_title{
     display: flex;
    
@@ -225,6 +241,9 @@ justify-content: space-between;
         margin-left: 0px;
         font-size: 18px;
       
+      }
+      .training img {
+         margin:auto
       }
      
       .innerDiv {

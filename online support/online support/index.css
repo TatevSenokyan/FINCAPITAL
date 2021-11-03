@@ -99,9 +99,12 @@ display: block;
 }
 .training {
     display:flex;
-    margin-left:30px;
+    padding-left:100px;
     font-size:20px;
     text-align: center;
+}
+.training img {
+    width:400px
 }
 footer{
   
@@ -117,10 +120,8 @@ footer{
     display:flex;
     justify-content: space-between;
     align-items: center;
-    
-   
-
-    max-width: 100%;
+    max-width: 90%;
+    margin-left: 50px;
 }
 a{
     text-decoration: none;
@@ -131,6 +132,15 @@ display: flex;
 justify-content: space-between;
 
 }
+
+.contact_icon p{
+    height:50px;
+   align-items:center;
+    display:flex;
+    margin-left: 20px;
+    
+    }
+   
 .footer_title{
     display: flex;
     justify-content: space-between;
@@ -219,12 +229,15 @@ justify-content: space-between;
           width:100%;
         justify-content: center;
         display:flex;
+        padding-left: 0px;
         flex-direction:column;
         text-align:center;
-        margin-left: 0px;
         font-size: 18px;
        
       }
+      .training img {
+        margin:auto
+    }
      
       .innerDiv {
 

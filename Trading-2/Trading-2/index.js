@@ -7,13 +7,21 @@ const secMenu=document.querySelector('.secmenu')
 const langWrap=document.querySelector('.langWrap')
 const arrow=document.querySelector('.arrow')
 const arrow1=document.querySelector('.arrow1')
+const headerLogo=document.querySelector('.headerLogo')
 const dropContent=document.querySelector('.dropdown-content')
 
 openMenu.addEventListener('click',show)
 closeMenu.addEventListener('click',close)
 window.addEventListener('resize',resizee)
 
-
+headerLogo.addEventListener('click',()=>{
+ 
+  window.scrollTo({
+    top:0,
+    left:0,
+    behavior:'smooth'
+  })
+})
 function resizee ()  {
  
  if ( window.innerWidth>900) {
@@ -125,6 +133,11 @@ function handleScroll() {
   // elem.style.backgroundColor='red'
   // elem.style.transition='all 0.6s ease'
   elem.classList.toggle('scrolling-active',scrollY>0)
+  if (window.pageYOffset>10) {
+    headerLogo.style.cursor='pointer'
+  } else {
+    headerLogo.style.cursor=''
+  }
   if(window.pageYOffset>690) {
        let elem=document.querySelector('.menu1>img')
       elem.style.opacity=1
