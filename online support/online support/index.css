@@ -25,7 +25,7 @@ a{
   
 }
 p{
-    font-family: Roboto;
+    font-family: FreeSans;
 }
 header{
     width:100%;
@@ -71,6 +71,7 @@ header{
 .menu1{
     position:relative;
     margin-top: 8px;
+    margin-left:20px
 }
 .logo_part{
  width: 707px;
@@ -93,7 +94,7 @@ display: block;
     width:1366px;
 }
 .main_content{
-    font-family: Roboto;
+    font-family: FreeSans;
     max-width: 1026px;
     margin:0 auto;
 }
@@ -102,26 +103,44 @@ display: block;
     padding-left:100px;
     font-size:20px;
     text-align: center;
+    padding-top: 50px;
 }
 .training img {
     width:400px
 }
 footer{
-  
-   margin-top:100px;
-    align-items: flex-end;
+    display:flex;
+    margin-top:100px;
+   justify-content: space-between;
     width:100%;
     min-height:127px;
     margin-bottom:0;
+  align-items: center;
     background-color: #293747;
     
 }
+
 .footer_item{
+    display:flex;
+    justify-content:center;
+    width: 90%;
+    margin-left:50px;
+    justify-content: space-between;
+    
+}
+/* .footer_item{
+
     display:flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 90%;
+    max-width: 100%;
     margin-left: 50px;
+} */
+
+.footer_item>a p{
+    height:50px;
+    align-items: center;
+    display:flex
 }
 a{
     text-decoration: none;
